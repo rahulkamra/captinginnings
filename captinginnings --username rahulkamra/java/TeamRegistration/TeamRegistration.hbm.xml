@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="false" dynamic-update="false" mutable="true" name="TeamRegistration.TeamRegistrationPojo" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="CAPTING_TEAM">
+  <id name="teamname" column="TEAMNAME">
+      <generator class="assigned"/>
+  </id>
+  <property name="player1"/>
+  <property name="player2"/>
+  <property name="player3"/>
+  <property name="player4"/>
+  <property name="player5"/>    
+  <property name="player6"/>
+  <property name="player7"/>
+  <property name="player8"/>
+  <property name="player9"/>
+  <property name="player10"/>
+  <property name="player11"/>
+  <property name="banked_money" column="BANKED_MONEY"/>
+  <property name="batsman_level" column="BATSMAN_LEVEL"/>
+  <property name="bowler_level" column="BOWLER_LEVEL"/>
+  <property name="coach_level" column="COACH_LEVEL"/>
+  <property name="loose_matches" column="LOOSE"/>
+  <property name="money" column="MONEY"/>
+  <property name="points_left" column="POINTS_LEFT"/>
+  <property name="total_matches" column="TOTAL_MATCHES"/>
+  <property name="win_matches" column="WIN"/>
+  <property name="strategy_level" column="STRATEGY_LEVEL"/>
+  </class>
+</hibernate-mapping>

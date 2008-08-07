@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class dynamic-insert="false" dynamic-update="false" mutable="true" name="Pavallion.AllDetailsBean" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="CAPTING_TEAM">
+      <id name="teamname" column="TEAMNAME">
+          <generator class="assigned"></generator>
+      </id>
+      <property name="banked_money" column="BANKED_MONEY"/>
+      <property name="batsman_level" column="BATSMAN_LEVEL"/>
+      <property name="bowler_level" column="BOWLER_LEVEL"/>
+      <property name="coach_level" column="COACH_LEVEL"/>
+      <property name="loose" column="LOOSE"/>
+      <property name="money" column="MONEY"/>
+      <property name="points_left" column="POINTS_LEFT"/>
+      <property name="total_matches" column="TOTAL_MATCHES"/>
+      <property name="win" column="WIN"/>
+      <property name="strategy_level" column="STRATEGY_LEVEL"/>
+  </class>
+</hibernate-mapping>

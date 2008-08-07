@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class dynamic-insert="false" dynamic-update="false" mutable="true" name="Team.PakistanPojo" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="capting_pakistan">
+        <id name="playername" column="player_name">
+            <generator class="assigned"/>
+        </id>
+        <property name="total" column="total"/>
+        <property name="slogger" column="slogger"/>
+        <property name="strike_rotator" column="strike_rotator"/>
+        <property name="driver" column="driver"/>
+        <property name="puller" column="puller"/>
+        <property name="cutter" column="cutter"/>
+        <property name="leg_spinner" column="leg_spinner"/>
+        <property name="off_spinner" column="off_spinner"/>
+        <property name="chinaman" column="chinaman"/>
+        <property name="fast" column="fast"/>
+        <property name="medium" column="medium"/>
+    </class>
+</hibernate-mapping>
