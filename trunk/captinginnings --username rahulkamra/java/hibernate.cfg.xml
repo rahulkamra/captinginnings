@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory name="session1">
+    <property name="hibernate.dialect">org.hibernate.dialect.OracleDialect</property>
+    <property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+    <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:orcl</property>
+    <property name="hibernate.connection.username">scott</property>
+    <property name="hibernate.connection.password">tiger</property>
+    <mapping resource="UserRegistration/Registration.hbm.xml"/>
+    <mapping resource="Team/England.hbm.xml"/>
+    <mapping resource="Team/Australia.hbm.xml"/>
+    <mapping resource="Team/WestIndies.hbm.xml"/>
+    <mapping resource="Team/India.hbm.xml"/>
+    <mapping resource="Team/Pakistan.hbm.xml"/>
+    <mapping resource="Team/SriLanka.hbm.xml"/>
+    <mapping resource="Team/SouthAfrica.hbm.xml"/>
+    <mapping resource="Team/NewZealand.hbm.xml"/>
+    <mapping resource="TeamRegistration/TeamRegistration.hbm.xml"/>
+    <mapping resource="Test.hbm.xml"/>
+    <mapping class="" file="" jar="" package="" resource="Pavallion/update.hbm.xml"/>
+    <mapping class="" file="" jar="" package="" resource="Team/Eliete.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
